@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Review">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_baseline_star_24" />
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        app:layout_constraintStart_toEndOf="@+id/star1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_baseline_star_24" />
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        app:layout_constraintStart_toEndOf="@+id/star2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_baseline_star_24" />
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        app:layout_constraintStart_toEndOf="@+id/star3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_baseline_star_24" />
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        app:layout_constraintStart_toEndOf="@+id/star4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_baseline_star_24" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="Back"
+        app:layout_constraintTop_toBottomOf="@id/buttonSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="150dp"
+         />
+
+    <EditText
+        android:id="@+id/editReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan review (optional)"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@id/star1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="30dp"
+        android:id="@+id/rvReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSubmit" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@id/editReview"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="150dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

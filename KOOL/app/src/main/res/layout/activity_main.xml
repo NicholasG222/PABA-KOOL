@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="LOGOUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnCust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Service" />
+
+    <Button
+        android:id="@+id/btnConsul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultation Service" />
+
+    <Button
+        android:id="@+id/buttonHist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat history sewa" />
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <Button
+        android:id="@+id/buttonSortNama"
+        android:layout_marginStart="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urutkan\nberdasarkan\nnama" />
+
+    <Button
+        android:id="@+id/buttonSortHarga"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_height="wrap_content"
+        android:text="Urutkan\nberdasarkan\nharga" />
+</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/rvKost"
+        tools:listitem="@layout/viewkost"/>
+
+
+</LinearLayout>

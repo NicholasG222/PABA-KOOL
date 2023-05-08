@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">KOOL</string>
+    <string-array name="namaKost">
+        <item>Kost Buana</item>
+        <item>Kost Joni</item>
+        <item>Kost Budi</item>
+        <item>Kost Neptun</item>
+    </string-array>
+
+    <string-array name="alamatKost">
+        <item>Siwalankerto 200</item>
+        <item>Siwalankerto AA9</item>
+        <item>Siwalankerto AB6</item>
+        <item>Kutisari</item>
+
+    </string-array>
+
+    <string-array name="noTelp">
+        <item>6281233447956</item>
+        <item>6282255342375</item>
+        <item>6281386537849</item>
+        <item>6282199846728</item>
+    </string-array>
+
+    <string-array name="harga">
+        <item>950000</item>
+        <item>1200000</item>
+        <item>1150000</item>
+        <item>1000000</item>
+    </string-array>
+
+    <string-array name="fasilitas">
+        <item>AC, WIFI, Laundry, Rooftop</item>
+        <item>AC, Laundry, Dapur bersama</item>
+        <item>AC, Laundry</item>
+        <item>AC, Laundry</item>
+    </string-array>
+
+    <string-array name="foto">
+        <item>@drawable/buana</item>
+        <item>@drawable/joni</item>
+        <item>@drawable/budi</item>
+        <item>@drawable/neptun</item>
+    </string-array>
+</resources>
